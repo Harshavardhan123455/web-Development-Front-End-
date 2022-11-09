@@ -1,0 +1,146 @@
+.navbar {
+     background-color: #af6be7;
+}
+
+.about-home {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.anch {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto";
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    background-color: #af6be7;
+    color: white;
+    border: 0px;
+}
+button:hover {background-color: #fafad2;
+    cursor: pointer;
+    color: yellowgreen;
+}
+button:active {
+    background-color: #18aba8;
+    box-shadow: 0 5px rgb(48, 46, 46);
+    transform: translateY(6px);
+}
+.bgcontainer {
+    background-image: url("https://www.freegreatpicture.com/files/147/2565-background-color.jpg");
+    height: 100vh;
+    background-size: cover;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.input-style {
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: aqua;
+}
+
+.input-styl {
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(102, 0, 255);
+}
+
+.input-sty {
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(195, 255, 0);
+}
+
+.input-st {
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(255, 153, 0);
+}
+
+.input-s {
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(255, 0, 98);
+}
+
+.main-heading {
+    color: #ee0c39;
+    font-family: "Roboto";
+    font-weight: 650;
+    font-size: 40px;
+}
+
+.cont {
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: rgb(16, 169, 97);
+    border-style: dotted;
+}
+
+.container-bg {
+    background-color: #d0b2001a;
+    background-size: cover;
+}
+
+.header {
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 30px;
+    color: #a93695;
+    text-decoration: underline;
+}
+
+.button-modify {
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    font-family: "Roboto";
+    background-color: #aec73e;
+    color: white;
+    border: 0px;
+}
+
+.button-modif {
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    font-family: "Roboto";
+    background-color: transparent;
+    color: black;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.bg-container {
+    background-image: linear-gradient(#ffafbd, #ffc3a0);
+}
+
+.back-button {
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.paragraph {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+    color: #33bc2e;
+}
+
+.border-prop {
+    border-radius: 8px;
+}
