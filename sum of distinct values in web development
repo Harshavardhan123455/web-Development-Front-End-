@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.kxsYABWpuoKeOLGGKC2HigHaHa?pid=ImgDet&rs=1">
+    <title>Sum Of Distinct Values</title>
+    
+</head>
+<body>
+    <div id="sectionpage1">
+    <nav class="navbar  pb-2 pt-2">
+        <div class="container  d-flex flex-row justify-content-end">
+          <a class="text-white mr-4">
+            <button class="anch">Home</button>
+          </a>
+          <a>
+            <button class="anch" onclick="display('sectionpage2')">Solution</button></a>
+        </div>
+      </nav>
+    <div class="bgcontainer d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="row">
+        <div class="col-12">
+        <h1 class="main-heading mb-3">Sum Of Non-repeated(Distinct) Values</h1>
+    <input type="number" name="arr[]" id="1" value="" class="input-style"><br><br>
+    <input type="number" name="arr[]" id="2" value="" class="input-styl"><br><br>
+    <input type="number" name="arr[]" id="3" value="" class="input-sty"><br><br>
+    <input type="number" name="arr[]" id="4" value="" class="input-st"><br><br>
+    <input type="number" name="arr[]" id="5" value="" class="input-s"><br><br>
+    <button onclick="getvalue()" class="btn btn-info" style="color:white; font-family:Roboto;">Submit</button><br><br></div>
+    <div class="col-12 d-flex flex-row justify-content-center">
+    <div class="cont"><p id="demolast"></p></div>
+    </div>
+</div>
+</div>
+<script>
+    function sum(arr, n)
+    {
+        arr.sort();
+    
+        let sum = 0;
+        for (let i=0; i<n; i++)
+        {
+            if (arr[i] != arr[i+1])
+                sum = sum + arr[i];
+        }
+    
+        return sum;
+    }
+    document.write(sum(arr, n));
+    function getvalue() {
+        var input1 = parseFloat(document.getElementById("1").value)
+        var input2 = parseFloat(document.getElementById("2").value)
+        var input3 = parseFloat(document.getElementById("3").value)
+        var input4 = parseFloat(document.getElementById("4").value)
+        var input5 = parseFloat(document.getElementById("5").value)
+        let arr = [input1,input2,input3,input4,input5];
+        
+        let n = arr.length;
+        let result = sum(arr,n);
+        document.getElementById("demolast").innerHTML="The sum of input elemnts : "+result
+    }
+</script>  
+</div>
+</div>
+<div id="sectionpage2">
+    <div class="container-bg pb-4 pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="header">Solution For The Distinct Solution</h1>
+                    <p class="paragraph">A Simple Solution is to use two nested loops. The outer loop picks an element one by one starting from the leftmost element. The inner loop checks if the element is present on left side of it. If present, then ignores the element.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="https://i1.faceprep.in/Companies-1/sum-of-array-in-python.png" class="w-100 mb-4 border-prop" />
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="https://prepinsta.com/wp-content/uploads/2022/02/Artboard-%E2%80%93-3@2x.webp" class="w-100 mb-4  border-prop" />
+                </div>
+                <div class="col-12">
+                    <button class="button-modify" onclick="display('sectionpage3')">Watch Solution</button>
+                    <button class="button-modif" onclick="display('sectionpage1')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sectionpage3">
+    <div class="bg-container pb-4">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TeG5oY3WDw4?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="text-center mt-3 mb-4">
+            <button class="back-button btn btn-info" onclick="display('sectionpage2')">Back</button>
+            <button class="button-modify btn btn-info" onclick="display('sectionpage1')">Go To Home Page</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
